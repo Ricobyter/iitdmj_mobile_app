@@ -9,7 +9,7 @@ class DashboardPage extends StatelessWidget {
         children: [
           // Image container
           Container(
-            margin: EdgeInsets.only(top: 0, bottom: 15),
+            margin: EdgeInsets.only(top: 0, bottom: 10),
             child: Center(
               child: SizedBox(
                 width: MediaQuery.of(context).size.width,
@@ -24,12 +24,14 @@ class DashboardPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // Heading
-                Text(
-                  'Welcome to IIIT Jabalpur',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                Center(
+                  child: Text(
+                    'Welcome to IIIT Jabalpur',
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
                 SizedBox(height: 10), // Add space between heading and paragraph
