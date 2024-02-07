@@ -40,7 +40,7 @@ class _HomepageState extends State<Homepage> {
     if(currentPage == DrawerSections.dashboard){
       container = DashboardPage();
     } else if(currentPage == DrawerSections.about) {
-      container = AboutProgram();
+      container = AboutUsPage();
     } else  if(currentPage == DrawerSections.programs) {
       container = ProgramsPage();
     } else  if(currentPage == DrawerSections.people) {
@@ -57,7 +57,7 @@ class _HomepageState extends State<Homepage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFF116466),
-        title: Text("IIITDMJ CSE", style: TextStyle(color: Colors.white, fontSize: 20)),
+        title: Text("IIITDM Jabalpur\nCSE Discipline", style: TextStyle(color: Colors.white, fontSize: 20)),
         iconTheme: IconThemeData(color: Colors.white),
       ),
       body: container,
@@ -83,7 +83,7 @@ class _HomepageState extends State<Homepage> {
       padding: EdgeInsets.only(top: 15,),
       child: Column(
         children: [
-          menuItem(1, "Dashboard", Icons.dashboard_outlined,
+          menuItem(1, "Home", Icons.dashboard_outlined,
               currentPage == DrawerSections.dashboard ? true : false),
           menuItem(2, "About", Icons.query_stats,
               currentPage == DrawerSections.about ? true : false),
