@@ -43,14 +43,6 @@ class _DashboardPageState extends State<DashboardPage>
         children: [
           // Image slider
           Container(
-<<<<<<< HEAD
-            margin: EdgeInsets.only(top: 0, bottom: 10),
-            child: Center(
-              child: SizedBox(
-                width: MediaQuery.of(context).size.width,
-                child: Image.asset("assets/images/college.jpeg", fit: BoxFit.cover,),
-              ),
-=======
             height: 200, // Set the desired height for the image container
             child: PageView.builder(
               controller: _pageController,
@@ -69,7 +61,6 @@ class _DashboardPageState extends State<DashboardPage>
                   ),
                 );
               },
->>>>>>> bd07d52a1754a539bd7ae434fa0e5009217e5037
             ),
           ),
 
@@ -80,16 +71,6 @@ class _DashboardPageState extends State<DashboardPage>
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-<<<<<<< HEAD
-                // Heading
-                Center(
-                  child: Text(
-                    'Welcome to IIIT Jabalpur',
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
-=======
                 // Heading centered using Center widget
                 Center(
                   child: Text(
@@ -98,7 +79,6 @@ class _DashboardPageState extends State<DashboardPage>
                       color: Color(0xFF116466),
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
->>>>>>> bd07d52a1754a539bd7ae434fa0e5009217e5037
                     ),
                   ),
                 ),
