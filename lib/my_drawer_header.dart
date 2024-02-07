@@ -20,16 +20,16 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
         children: [
           Container(
             margin: EdgeInsets.only(bottom: 10),
-            height: 70,
+            height: 60,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
-                image: AssetImage('assets/images/college.jpeg'),
+                image: AssetImage('assets/images/college_logo.jpg'),
               ),
             ),
           ),
-          Text("IIIT CSE", style: TextStyle(color: Colors.white, fontSize: 20),),
-          Text("cse.iiitdmj.ac.in", style: TextStyle(color: Colors.grey[200], fontSize: 14),),
+          Text("IIITDM Jabalpur", style: TextStyle(color: Colors.white, fontSize: 20),),
+          Text("cseoffice@iiitdmj.ac.in", style: TextStyle(color: Colors.grey[200], fontSize: 14),),
 
         ],
       ),
