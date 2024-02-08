@@ -8,8 +8,13 @@ import 'package:untitled/people.dart';
 import 'package:untitled/placement.dart';
 import 'package:untitled/programs.dart';
 import 'package:untitled/research.dart';
+import 'package:flutter_file_downloader/flutter_file_downloader.dart';
 
-void main() {
+import 'mongodb.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await MongoDatabase.connect();
   runApp(const MyApp());
 }
 
