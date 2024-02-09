@@ -3,6 +3,7 @@ import 'package:untitled/about.dart';
 import 'package:untitled/contacts.dart';
 import 'package:untitled/dashboard.dart';
 import 'package:untitled/facilities.dart';
+import 'package:untitled/links.dart';
 import 'package:untitled/my_drawer_header.dart';
 import 'package:untitled/people.dart';
 import 'package:untitled/placement.dart';
@@ -58,6 +59,8 @@ class _HomepageState extends State<Homepage> {
       container = FacilitiesProgram();
     } else  if(currentPage == DrawerSections.contacts) {
       container = ContactPage();
+    } else  if(currentPage == DrawerSections.links) {
+      container = LinkPage();
     }
     return Scaffold(
       appBar: AppBar(
@@ -97,15 +100,17 @@ class _HomepageState extends State<Homepage> {
           menuItem(4, "People", Icons.people,
               currentPage == DrawerSections.people ? true : false),
           Divider(),
-          menuItem(5, "Research", Icons.people_sharp,
+          menuItem(5, "Research", Icons.science,
               currentPage == DrawerSections.research ? true : false),
-          menuItem(6, "Placement", Icons.schedule,
+          menuItem(6, "Placement", Icons.work,
               currentPage == DrawerSections.placement ? true : false),
           Divider(),
           menuItem(7, "Facilities", Icons.event,
               currentPage == DrawerSections.facilities ? true : false),
-          menuItem(8, "Contacts", Icons.people_alt_outlined,
+          menuItem(8, "Contacts", Icons.contact_mail,
               currentPage == DrawerSections.contacts ? true : false),
+          menuItem(9, "QuickLinks", Icons.link,
+              currentPage == DrawerSections.links ? true : false),
 
         ],
 
@@ -148,6 +153,9 @@ class _HomepageState extends State<Homepage> {
             else if(id == 8){
               currentPage = DrawerSections.contacts;
             }
+            else if(id == 9){
+              currentPage = DrawerSections.links;
+            }
 
 
           });
@@ -179,6 +187,7 @@ enum DrawerSections{
   placement,
   facilities,
   contacts,
+  links,
 }
 
 
