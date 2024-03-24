@@ -15,7 +15,7 @@ The IIITDM Jabalpur CSE Department App serves as a platform to provide students,
 - **Research:** Discover ongoing research projects, publications, and collaborations in the CSE Department.
 - **Placement:** Stay updated on placement opportunities, internship programs, and career guidance.
 - **Facilities:** Find information about the facilities available in the CSE Department, including labs, equipment, and infrastructure.
-- **Contacts:** Access contact details of key personnel and administrative offices within the CSE Department.
+- **Contacts:** Access contact details of key personnel and administrative offices within the CSE Department of IIITDMJ.
 
 ## Getting Started
 
