@@ -1,6 +1,6 @@
 # IIITDM Jabalpur CSE Department App
 
-This is a mobile application developed for the Computer Science and Engineering (CSE) Department of the Indian Institute of Information Technology, Design, and Manufacturing (IIITDM) Jabalpur. The app is built using Flutter framework and developed using Android Studio.
+This is a mobile application developed for the Computer Science and Engineering (CSE) Department of the Indian Institute of Information Technology, Design, and Manufacturing (IIITDM) Jabalpur by our team. The app is built using Flutter framework and developed using Android Studio.
 
 ## About the App
 
